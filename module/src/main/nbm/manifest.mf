@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-OpenIDE-Module-Localizing-Bundle: dev/saseno/netbeans/mini/module/Bundle.properties
-
