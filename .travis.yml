@@ -1,0 +1,17 @@
+language: java
+install: mvn -version
+script:
+- mvn clean verify
+- rm -Rf MiniNetbeans/*
+- mkdir out
+- mkdir out/MiniNetbeans
+- cp -v application/target/*.zip out/MiniNetbeans
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_ACCTOKEN
+  keep_history: true
+  local_dir: out
+  verbose: true
+  on:
+    branch: master
