@@ -23,6 +23,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean verify -Dnetbeans.verify.integrity=false
     - name: Zip artifacts
-      run: tar -cvzf mininetbeans.tar.gz application/target/mininetbeans
+      run: tar -cvzf mininetbeans.tar.gz application/target/mininetbeans && ls -al
       #run: ls -al application/target/mininetbeans
       
