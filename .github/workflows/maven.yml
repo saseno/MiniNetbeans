@@ -25,9 +25,9 @@ jobs:
     - name: Zip artifacts
       run: tar -cvzf miniNetBeans.tar.gz application/target/mininetbeans && ls -al
       #run: ls -al application/target/mininetbeans
-    - name: Upload miniNetBeans.tar.gz
+    - name: Upload miniNetBeans.zip
       uses: actions/upload-artifact@v2
       with:
-        name: output
-        path: miniNetBeans.tar.gz
+        name: miniNetBeans
+        path: application/target/mininetbeans
       
